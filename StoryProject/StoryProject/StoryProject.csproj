@@ -46,20 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Utils\TextExtraction.cs" />
+    <Compile Include="GameLoop.cs" />
+    <Compile Include="Utils\StoryLoader.cs" />
     <Compile Include="World\Encounter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="World\Encounters\GoblinEncounter.cs" />
     <Compile Include="World\Interfaces\IItem.cs" />
     <Compile Include="World\Interfaces\IUnit.cs" />
     <Compile Include="World\NPSs\Goblin.cs" />
     <Compile Include="World\NPSs\Slime.cs" />
     <Compile Include="World\NPSs\Wolf.cs" />
-    <Compile Include="Utils\SceneState.cs" />
+    <Compile Include="Utils\States.cs" />
     <Compile Include="World\Player\Hero.cs" />
     <Compile Include="World\WorldElements\Achievement.cs" />
-    <Compile Include="World\WorldElements\NPC.cs" />
-    <Compile Include="World\WorldElements\StoryEvent.cs" />
+    <Compile Include="World\WorldElements\BaseUnit.cs" />
+    <Compile Include="World\WorldElements\Story.cs" />
     <Compile Include="World\WorldElements\Trophy.cs" />
   </ItemGroup>
   <ItemGroup>

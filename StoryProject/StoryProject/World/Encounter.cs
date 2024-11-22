@@ -1,29 +1,18 @@
-﻿using StoryProject.World.Player;
+﻿using StoryProject.Scenaries.Utils;
+using StoryProject.World.Player;
 using StoryProject.World.WorldElements;
 using System;
 
 namespace StoryProject.World
 {
-    public class Encounter
+    public abstract class Encounter
     {
-        public StoryEvent storyEvent { get; }
-        public Hero player {  get; }
-        public NPC enemy { get; }
-        public Trophy trophy { get; }
-        public Achievement achievement { get;}
-
-        public Encounter(int StoryID, NPC newEnemy, Trophy newTrophy, Achievement newAchievement)
-        {
-            storyEvent = LoadStory(StoryID);
-            enemy = newEnemy;
-            trophy = newTrophy;
-            achievement = newAchievement;
-        }
-
-        private StoryEvent LoadStory(int storyID)
-        {
-
-            return null;
-        }
+        public abstract Story storyEvent { get; }
+        public abstract Hero player { get; }
+        public abstract BaseUnit enemy { get; }
+        public abstract Trophy trophy { get; }
+        public abstract Achievement achievement { get; }
+        public abstract void Battle();
+        public abstract States Start();
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StoryProject.World.NPSs
 {
-    class Wolf : NPC
+    class Wolf : BaseUnit
     {
         private string _name;
         private int _health;
